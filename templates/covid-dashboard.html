@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Covid Dashboard</title>{% endblock title %}
+
+
+{% block content %}
+<br>
+    <div class="main" style="text-align: center">
+        <h1>Covid Dashboard</h1>
+        
+        {% if new_case %}
+        <div>
+            <p>ผู้ติดเชื้อล่าสุด<p style="color: #cc0000; font-size:50px; font-weight: bolder;">{{new_case}}</p></p>
+        </div>
+        {% endif %}
+        
+        {% if total_case %}
+        <div>
+            <p>ยืนยันผู้ป่วยทั้งหมด<p style="color: #660000; font-size: 50px; font-weight: bolder;">{{total_case}}</p></p>
+        </div>
+        {% endif %}
+
+        {% if new_case_excludeabroad %}
+        <div>
+            <p>ผู้ป่วยติดเชื้อภายในประเทศล่าสุด<p style="color: #0b5394; font-size: 40px; font-weight: bolder;">{{new_case_excludeabroad}}</p></p>
+        </div>
+        {% endif %}
+
+        {% if total_case_excludeabroad %}
+        <div>
+            <p>ผู้ป่วยติดเชื้อภายในประเทศทั้งหมด<p style="color: #134f5c; font-size: 40px; font-weight: bolder;">{{total_case_excludeabroad}}</p></p>
+        </div>
+        {% endif %}
+
+        {% if new_death %}
+        <div>
+            <p>ผู้เสียชีวิตล่าสุด<p style="color: #f9cb9c; font-size: 50px; font-weight: bolder;">{{new_death}}</p></p>
+        </div>
+        {% endif %}
+
+        {% if total_death %}
+        <div>
+            <p>ผู้เสียชีวิตทั้งหมด<p style="color: #f44336; font-size: 50px; font-weight: bolder;">{{total_death}}</p></p>
+        </div>
+        {% endif %}
+
+        {% if case_prison %}
+        <div>
+            <p>ผู้ติดเชื้อจากเรือนจำ<p style="color: #e69138; font-size: 40px; font-weight: bolder;">{{case_prison}}</p></p>
+        </div>
+        {% endif %}
+
+        {% if case_walkin %}
+        <div>
+            <p>ผู้ติดเชื้อที่เข้ามารับการรักษาที่โรงพยาบาล<p style="color: #2986cc; font-size: 40px; font-weight: bolder;">{{case_walkin}}</p></p>
+        </div>
+        {% endif %}
+
+        {% if update_date %}
+        <div>
+            <p>วันที่รายงาน<p style="color: #6aa84f; font-size: 30px; font-weight: bolder;">{{update_date}}</p></p>
+        </div>
+        {% endif %}
+    </div>
+{% endblock content %}
+

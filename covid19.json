@@ -1,0 +1,22 @@
+[
+    {
+        "year": 2023,
+        "weeknum": 14,
+        "new_case": 158,
+        "total_case": 5038,
+        "new_case_excludeabroad": 158,
+        "total_case_excludeabroad": 5038,
+        "new_recovered": 0,
+        "total_recovered": 0,
+        "new_death": 0,
+        "total_death": 269,
+        "case_foreign": 0,
+        "case_prison": 0,
+        "case_walkin": 158,
+        "case_new_prev": 169,
+        "case_new_diff": -11,
+        "death_new_prev": 3,
+        "death_new_diff": -3,
+        "update_date": "2023-04-09 07:42:45"
+    }
+]

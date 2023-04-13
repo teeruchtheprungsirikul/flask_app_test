@@ -1,0 +1,16 @@
+/* this is css */
+.main {
+  background-color: #c22620;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+h1 {
+  color: #084b78;
+  font-size: 80px;
+}
+p {
+  color: white;
+  font-size: 30px;
+}

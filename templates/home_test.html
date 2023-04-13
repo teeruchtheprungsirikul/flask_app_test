@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Home</title>
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"> 
+    </head>
+    <body>
+      <div class="main" style="text-align: center">
+        <h1>Hello, {{name}}</h1>
+        <p>I love learning Flask</p>
+        <img src="static/img/ink1.jpg" alt="ink1" height="400" width="400" /><br>
+        <img
+          src="{{url_for('static', filename='img/ink2.jpg')}}"
+          alt="ink2"
+          height="400"
+          width="400"
+        />
+      </div>
+
+      <div class="main" style="text-align: center">
+        <h1>Hello, {{name}}</h1>
+        <p>I love INK WARUNTORN</p>
+        <img src="static/img/ink1.jpg" alt="ink1" height="400" width="400" />
+        <img
+          src="{{url_for('static', filename='img/ink2.jpg')}}"
+          alt="ink2"
+          height="400"
+          width="400"
+        />
+      </div>
+    </body>
+  </html>
+  
