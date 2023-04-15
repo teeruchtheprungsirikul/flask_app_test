@@ -275,13 +275,13 @@ def logout():
     logout_user()
     return redirect(url_for('login'))
 
-# mode = "dev" # developer mode
-# #mode = "prod"
-# if __name__ == "__main__":
-#     if mode == "dev":
-#         # app.run(debug=True)
-#         app.run(host='127.0.0.1', port=5000, debug=True)
-#     else:
-#         # Mode:Production
-#         serve(app, host='127.0.0.1', port=8080,
-#             threads=1)
+mode = "dev" # developer mode
+#mode = "prod"
+if __name__ == "__main__":
+    if mode == "dev":
+        # app.run(debug=True)
+        app.run(host='127.0.0.1', port=5000, debug=True)
+    else:
+        # Mode:Production
+        serve(app, host='127.0.0.1', port=8080,
+            threads=1)
