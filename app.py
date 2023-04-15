@@ -11,6 +11,7 @@ from flask_login import LoginManager, login_required, login_user, logout_user , 
 
 from form import LoginForm
 
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -274,13 +275,13 @@ def logout():
     logout_user()
     return redirect(url_for('login'))
 
-mode = "dev" # developer mode
-#mode = "prod"
-if __name__ == "__main__":
-    if mode == "dev":
-        # app.run(debug=True)
-        app.run(host='127.0.0.1', port=5000, debug=True)
-    else:
-        # Mode:Production
-        serve(app, host='127.0.0.1', port=8080,
-            threads=1)
+# mode = "dev" # developer mode
+# #mode = "prod"
+# if __name__ == "__main__":
+#     if mode == "dev":
+#         # app.run(debug=True)
+#         app.run(host='127.0.0.1', port=5000, debug=True)
+#     else:
+#         # Mode:Production
+#         serve(app, host='127.0.0.1', port=8080,
+#             threads=1)
