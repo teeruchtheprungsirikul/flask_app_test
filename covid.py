@@ -1,12 +1,12 @@
 import requests
 import json
 
-proxies = {
-    "http" : 'http://127.0.0.1:5000/',
-    "https" : 'https://127.0.0.1:5000/'
-}
+# proxies = {
+#     "http" : 'http://127.0.0.1:5000/',
+#     "https" : 'https://127.0.0.1:5000/'
+# }
 # Create a variable to store covid-19 data(Retrieve from API)
-url = requests.get('https://covid19.ddc.moph.go.th/api/Cases/today-cases-all', proxies=proxies)
+url = requests.get('https://covid19.ddc.moph.go.th/api/Cases/today-cases-all')
 #print(url) <Response [200]>
 print(url.content.decode("utf-8"))
 
