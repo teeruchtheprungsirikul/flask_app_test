@@ -2,7 +2,7 @@ from concurrent.futures import thread
 from flask import Flask, render_template, request, redirect, flash, url_for
 from waitress import serve
 from models import db, User, Course
-from covid import covid_obj
+from covid import covid_obj,url
 import random
 
 from werkzeug.security import generate_password_hash
