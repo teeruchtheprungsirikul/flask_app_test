@@ -6,7 +6,7 @@ import json
 #         "https" : 'covid19.ddc.moph.go.th:443'
 # }
 # Create a variable to store covid-19 data(Retrieve from API)
-url = requests.get('https://covid19.ddc.moph.go.th/api/Cases/today-cases-all', proxies={'http':'','https':''})
+url = requests.get('https://covid19.ddc.moph.go.th/api/Cases/today-cases-all').json()
 #print(url) <Response [200]>
 print(url.content.decode("utf-8"))
 
