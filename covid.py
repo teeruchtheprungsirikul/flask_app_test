@@ -6,7 +6,8 @@ import json
 #         "https" : 'covid19.ddc.moph.go.th:443'
 # }
 # Create a variable to store covid-19 data(Retrieve from API)
-url = requests.get(
+
+url = requests.Session().get(
     'https://covid19.ddc.moph.go.th/api/Cases/today-cases-all',
     params={'q': 'requests+language:python'},
     headers={'Content-Type': 'application/json'}
