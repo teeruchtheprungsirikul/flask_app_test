@@ -275,6 +275,7 @@ def logout():
     logout_user()
     return redirect(url_for('login'))
 
-if __name__ == "__main__":
-    db.create_all()
-    app.run()
+def run_mode() :
+    if __name__ == "__main__":
+        db.create_all()
+        app.run()
